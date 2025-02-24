@@ -1,0 +1,28 @@
+{
+    "epochs": 30,
+    "lr": 0.005,
+    "k": 2,
+    "batch_size": 512,
+    "communication":{
+        "communication_protocol": "ours",
+        "cache_size": 2
+    },
+    "dataset":{
+        "dataset_name": "fashion_mnist",
+        "num_classes": 10
+    },
+    "model_list":{
+        "0": {
+            "type": "CNN4FashionMnist",
+            "input_dim": 392,
+            "output_dim": 10
+        },
+        "1": {
+            "type": "CNN4FashionMnist",
+            "input_dim": 392,
+            "output_dim": 10
+        },
+        "apply_trainable_layer": 0,
+        "global_model": "ClassificationModelHostHead"
+    }
+}

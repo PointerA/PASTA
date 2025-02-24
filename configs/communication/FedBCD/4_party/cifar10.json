@@ -1,0 +1,42 @@
+{
+    "epochs": 30,
+    "lr": 0.0002,
+    "k": 4,
+    "batch_size": 128,
+    "communication":{
+        "communication_protocol": "FedBCD_p",
+        "iteration_per_aggregation": 5
+    },
+    "dataset":{
+        "dataset_name": "cifar10",
+        "num_classes": 10
+    },
+    "model_list":{
+        "0": {
+            "type": "vgg_small",
+            "input_dim": 256,
+            "output_dim": 512,
+            "path": "random_20"
+        },
+        "1": {
+            "type": "vgg_small",
+            "input_dim": 256,
+            "output_dim": 512,
+            "path": "random_20"
+        },
+        "2": {
+            "type": "vgg_small",
+            "input_dim": 256,
+            "output_dim": 512,
+            "path": "random_20"
+        },
+        "3": {
+            "type": "vgg_small",
+            "input_dim": 256,
+            "output_dim": 512,
+            "path": "random_20"
+        },
+        "apply_trainable_layer": 1,
+        "global_model": "TopModelForVgg"
+    }
+}
