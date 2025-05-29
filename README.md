@@ -1,0 +1,1 @@
+Source code for the paper **PASTA: Training Acceleration for Vertical Federated Learning via Adaptive Pipeline Parallelism**, which is accepted by the IEEE/ACM International Symposium on Quality of Service (IWQoS) 2025.
